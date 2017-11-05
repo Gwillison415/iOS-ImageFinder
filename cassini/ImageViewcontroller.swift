@@ -1,5 +1,5 @@
 //
-//  ImageViewcontrollerViewController.swift
+//  ImageViewController.swift
 //  cassini
 //
 //  Created by Grant Willison on 11/2/17.

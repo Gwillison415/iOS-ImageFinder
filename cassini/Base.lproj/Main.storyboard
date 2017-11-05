@@ -24,21 +24,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
                                         <state key="normal" title="Google Plus"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="tMq-Aa-ZCe"/>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="qQA-IK-cCa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgP-e8-oJp">
                                         <rect key="frame" x="0.0" y="45" width="83" height="30"/>
                                         <state key="normal" title="In a Cave"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="sYf-Yy-QsG"/>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="ygP-tY-WuN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-Qq-dwq">
                                         <rect key="frame" x="0.0" y="90" width="83" height="30"/>
                                         <state key="normal" title="My Birthday"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="Apq-gj-rVS"/>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="6na-NL-Rpe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="-1657" y="-1"/>
         </scene>
-        <!--Image Viewcontroller View Controller-->
+        <!--Image View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ImageViewcontrollerViewController" customModule="cassini" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ImageViewController" customModule="cassini" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,6 +114,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Apq-gj-rVS"/>
+        <segue reference="xKc-Pt-LJR"/>
     </inferredMetricsTieBreakers>
 </document>
