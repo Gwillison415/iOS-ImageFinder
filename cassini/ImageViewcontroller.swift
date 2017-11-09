@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
-    
+class ImageViewController: UIViewController, UIScrollViewDelegate {
+// we need to say this IVC is scrollview delegate in order to cahnge the self context for scrollView.delegate
     var imageURL: NSURL? {
         didSet{
             image = nil
@@ -20,9 +20,14 @@ class ImageViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView! {
         didSet {
             scrollView.contentSize = imageView.frame.size
+            scrollView.delegate = self
+            scrollView.minimumZoomScale = 0.01 //The UIScrollView class can have a delegate that must adopt the UIScrollViewDelegate protocol. For zooming and panning to work, the delegate must implement both max and minzoomscale
+            scrollView.maximumZoomScale = 1.0
         }
     }
-    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
+    }
     private func fetchImage() {
         if let url = imageURL {
             if let imageData = NSData(contentsOf: url as URL) {
@@ -45,7 +50,6 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.addSubview(imageView)
-        imageURL = NSURL(string: DemoURL.MyLinkedin)
         
     }
     

@@ -24,7 +24,7 @@ class PictureViewController: UIViewController {
 //                if let sendingButton = sender as? UIButton {
 //                    let imageName = sendingButton.currentTitle
 //                }
-                print("the iamgeURL is \(String(describing: ivc.imageURL! as URL)) ")
+                print("the iamgeURL is \(String(describing: ivc.imageURL! as URL)) and the title is \(String(describing: ivc.title!))")
             }
             
         }

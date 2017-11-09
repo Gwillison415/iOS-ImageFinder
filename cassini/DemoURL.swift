@@ -18,6 +18,7 @@ struct DemoURL {
     
     static func FindImageNameInList(imageName: String?) ->  NSURL? {
         if let urlString = AllMedia[imageName ?? ""] {
+            print("the image name is \(imageName ?? "no name")")
             return NSURL(string: urlString)
         } else {
             return nil
