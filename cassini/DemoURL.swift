@@ -16,9 +16,9 @@ struct DemoURL {
         "My Birthday" : "https://scontent-sjc2-1.xx.fbcdn.net/v/t1.0-9/22366786_10155945046874873_5478798747793880291_n.jpg?oh=cef8f5f4b603706834f74eb0c7f38eec&oe=5AA731CF",
         ]
     
-    static func FindImageNameInList(imageName: String?) ->  URL? {
-        if let urlString=AllMedia[imageName ?? ""] {
-            return URL(string: urlString)
+    static func FindImageNameInList(imageName: String?) ->  NSURL? {
+        if let urlString = AllMedia[imageName ?? ""] {
+            return NSURL(string: urlString)
         } else {
             return nil
         }

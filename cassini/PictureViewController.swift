@@ -19,11 +19,12 @@ class PictureViewController: UIViewController {
         if segue.identifier == StoryBoard.ShowImageSegue {
             if let ivc = segue.destination as? ImageViewController {
                 let imageName = (sender as? UIButton)?.currentTitle
-                ivc.imageURL = DemoURL.FindImageNameInList(imageName: imageName)
+                ivc.imageURL = DemoURL.FindImageNameInList(imageName: imageName) as NSURL?
                 ivc.title = imageName
 //                if let sendingButton = sender as? UIButton {
 //                    let imageName = sendingButton.currentTitle
 //                }
+                print("the iamgeURL is \(String(describing: ivc.imageURL! as URL)) ")
             }
             
         }

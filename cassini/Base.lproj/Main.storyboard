@@ -24,21 +24,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
                                         <state key="normal" title="Google Plus"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="qQA-IK-cCa"/>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="qQA-IK-cCa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgP-e8-oJp">
                                         <rect key="frame" x="0.0" y="45" width="83" height="30"/>
                                         <state key="normal" title="In a Cave"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="ygP-tY-WuN"/>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="ygP-tY-WuN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-Qq-dwq">
                                         <rect key="frame" x="0.0" y="90" width="83" height="30"/>
                                         <state key="normal" title="My Birthday"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="6na-NL-Rpe"/>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Show Image" id="6na-NL-Rpe"/>
                                         </connections>
                                     </button>
                                 </subviews>

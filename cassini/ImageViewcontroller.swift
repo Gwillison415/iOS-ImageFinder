@@ -10,7 +10,7 @@ import UIKit
 
 class ImageViewController: UIViewController {
     
-    var imageURL: URL? {
+    var imageURL: NSURL? {
         didSet{
             image = nil
             fetchImage()
@@ -25,7 +25,7 @@ class ImageViewController: UIViewController {
     
     private func fetchImage() {
         if let url = imageURL {
-            if let imageData = NSData(contentsOf: url) {
+            if let imageData = NSData(contentsOf: url as URL) {
                 image = UIImage(data: imageData as Data)
             }
         }
@@ -45,7 +45,7 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.addSubview(imageView)
-        imageURL = URL(string: DemoURL.MyLinkedin)
+        imageURL = NSURL(string: DemoURL.MyLinkedin)
         
     }
     
