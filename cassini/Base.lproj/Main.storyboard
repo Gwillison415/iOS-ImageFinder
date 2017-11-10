@@ -78,16 +78,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="mDy-xR-mGA">
+                                <rect key="frame" x="177" y="355.5" width="20" height="20"/>
+                            </activityIndicatorView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIe-Hh-DfN">
-                                <rect key="frame" x="64" y="44" width="243" height="428"/>
+                                <rect key="frame" x="0.0" y="85" width="291" height="531"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mDy-xR-mGA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OzZ-JL-Kag"/>
+                            <constraint firstItem="mDy-xR-mGA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hQE-U1-pW4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="aIe-Hh-DfN" id="wkW-zj-jqh"/>
+                        <outlet property="spinner" destination="mDy-xR-mGA" id="vAd-aG-U1L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,6 +122,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ygP-tY-WuN"/>
+        <segue reference="xKc-Pt-LJR"/>
     </inferredMetricsTieBreakers>
 </document>
